@@ -25,3 +25,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: max/secret-scan@master
+      - env :
+          PAT_TOKEN: ${{secrets.PAT_TOKEN}}
+          
