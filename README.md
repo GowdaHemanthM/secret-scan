@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: max/secret-scan@master
         with:
-          include_path: 'configuration/include_paths.txt'
+          include_path: $CODE_PATH
           exclude_path: 'configuration/exclude_paths.txt'
 ```
 
